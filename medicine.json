@@ -1,0 +1,626 @@
+{
+    "1": {
+      "medicine": "DOMCET",
+      "alternatives": ["Domperidone", "Ondansetron"]
+    },
+    "2": {
+      "medicine": "DOMPAR",
+      "alternatives": ["Domperidone", "Metoclopramide"]
+    },
+    "3": {
+      "medicine": "ACI FREE (LEMON)",
+      "alternatives": ["Aluminum Hydroxide", "Magnesium Hydroxide"]
+    },
+    "4": {
+      "medicine": "ACI FREE (PUDINA)",
+      "alternatives": ["Aluminum Hydroxide", "Simethicone"]
+    },
+    "5": {
+      "medicine": "ACI FREE (REGULAR)",
+      "alternatives": ["Calcium Carbonate", "Magnesium Hydroxide"]
+    },
+    "6": {
+      "medicine": "ACI FREE (ZEERA)",
+      "alternatives": ["Sodium Bicarbonate", "Aluminum Hydroxide"]
+    },
+    "7": {
+      "medicine": "ACIGENE GEL 170ML MINT",
+      "alternatives": ["Magaldrate", "Simethicone"]
+    },
+    "8": {
+      "medicine": "DIGUSIL MPS (MINT)",
+      "alternatives": ["Aluminum Hydroxide", "Magnesium Hydroxide"]
+    },
+    "9": {
+      "medicine": "OXECAINE 170ML",
+      "alternatives": ["Oxetacaine", "Antacid (combination)"]
+    },
+    "10": {
+      "medicine": "ALERGIN",
+      "alternatives": ["Cetirizine", "Loratadine"]
+    },
+    "11": {
+      "medicine": "ALERGIN - L",
+      "alternatives": ["Levocetirizine", "Fexofenadine"]
+    },
+    "12": {
+      "medicine": "BILACIP TABS",
+      "alternatives": ["Bilastine", "Loratadine"]
+    },
+    "13": {
+      "medicine": "BILACIP-M",
+      "alternatives": ["Bilastine", "Montelukast"]
+    },
+    "14": {
+      "medicine": "CETCIP",
+      "alternatives": ["Cetirizine", "Levocetirizine"]
+    },
+    "15": {
+      "medicine": "CETCIP - L",
+      "alternatives": ["Levocetirizine", "Desloratadine"]
+    },
+    "16": {
+      "medicine": "CETCIP 30 ML",
+      "alternatives": ["Cetirizine Syrup", "Levocetirizine Syrup"]
+    },
+    "17": {
+      "medicine": "EMIN",
+      "alternatives": ["Promethazine", "Meclizine"]
+    },
+    "18": {
+      "medicine": "FEXIGRA 120 TABS",
+      "alternatives": ["Fexofenadine", "Loratadine"]
+    },
+    "19": {
+      "medicine": "FEXIGRA 180 TABS",
+      "alternatives": ["Fexofenadine", "Desloratadine"]
+    },
+    "20": {
+      "medicine": "FEXIGRA-M TABS",
+      "alternatives": ["Fexofenadine", "Montelukast"]
+    },
+    "21": {
+      "medicine": "LORATIN",
+      "alternatives": ["Loratadine", "Cetirizine"]
+    },
+    "22": {
+      "medicine": "MONTECIP BL TABS",
+      "alternatives": ["Montelukast", "Levocetirizine"]
+    },
+    "23": {
+      "medicine": "MONTECIP LC JUNIOR SYRUP",
+      "alternatives": ["Montelukast Syrup", "Levocetirizine Syrup"]
+    },
+    "24": {
+      "medicine": "MONTECIP LC TABS",
+      "alternatives": ["Montelukast", "Levocetirizine"]
+    },
+    "25": {
+      "medicine": "MONTECIP-FX TABS",
+      "alternatives": ["Montelukast", "Fexofenadine"]
+    },
+    "26": {
+      "medicine": "NEW OKACET",
+      "alternatives": ["Cetirizine", "Levocetirizine"]
+    },
+    "27": {
+      "medicine": "OKACET 10 MG",
+      "alternatives": ["Cetirizine", "Desloratadine"]
+    },
+    "28": {
+      "medicine": "OKACET - L",
+      "alternatives": ["Levocetirizine", "Fexofenadine"]
+    },
+    "29": {
+      "medicine": "OKACET - L 30ML",
+      "alternatives": ["Levocetirizine Syrup", "Cetirizine Syrup"]
+    },
+    "30": {
+      "medicine": "OKACET SYRUP",
+      "alternatives": ["Cetirizine Syrup", "Loratadine Syrup"]
+    },
+    "31": {
+      "medicine": "VERTIRON",
+      "alternatives": ["Betahistine", "Meclizine"]
+    },
+    "32": {
+      "medicine": "DERICIP",
+      "alternatives": ["Theophylline", "Aminophylline"]
+    },
+    "33": {
+      "medicine": "DERICIP 150 RETARD",
+      "alternatives": ["Theophylline", "Aminophylline"]
+    },
+    "34": {
+      "medicine": "DERICIP 300 RETARD",
+      "alternatives": ["Theophylline", "Aminophylline"]
+    },
+    "35": {
+      "medicine": "DOXOCIP",
+      "alternatives": ["Doxycycline", "Tetracycline"]
+    },
+    "36": {
+      "medicine": "AZICIP 100 ORAL SUSPN",
+      "alternatives": ["Azithromycin", "Erythromycin"]
+    },
+    "37": {
+      "medicine": "AZICIP 200 ORAL SUSPN",
+      "alternatives": ["Azithromycin", "Clarithromycin"]
+    },
+    "38": {
+      "medicine": "AZICIP 250",
+      "alternatives": ["Azithromycin", "Erythromycin"]
+    },
+    "39": {
+      "medicine": "AZICIP 500",
+      "alternatives": ["Azithromycin", "Clarithromycin"]
+    },
+    "40": {
+      "medicine": "AZIPRO 250",
+      "alternatives": ["Azithromycin", "Roxithromycin"]
+    },
+    "41": {
+      "medicine": "AZIPRO 500",
+      "alternatives": ["Azithromycin", "Clarithromycin"]
+    },
+    "42": {
+      "medicine": "AZOMYCIN 100",
+      "alternatives": ["Azithromycin", "Erythromycin"]
+    },
+    "43": {
+      "medicine": "AZOMYCIN 200",
+      "alternatives": ["Azithromycin", "Clarithromycin"]
+    },
+    "44": {
+      "medicine": "AZOMYCIN 250 TABS",
+      "alternatives": ["Azithromycin", "Erythromycin"]
+    },
+    "45": {
+      "medicine": "AZOMYCIN 500",
+      "alternatives": ["Azithromycin", "Clarithromycin"]
+    },
+    "46": {
+      "medicine": "CEFASYN 250 4'S",
+      "alternatives": ["Cefuroxime", "Cefixime"]
+    },
+    "47": {
+      "medicine": "CEFASYN 250 10'S",
+      "alternatives": ["Cefuroxime", "Cefixime"]
+    },
+    "48": {
+      "medicine": "CEFASYN 500 4'S",
+      "alternatives": ["Cefuroxime", "Cefixime"]
+    },
+    "49": {
+      "medicine": "CEFASYN 500 10'S",
+      "alternatives": ["Cefuroxime", "Cefixime"]
+    },
+    "50": {
+      "medicine": "CEFIX 100",
+      "alternatives": ["Cefixime", "Cefuroxime"]
+    },
+    "51": {
+      "medicine": "CEFIX 200",
+      "alternatives": ["Cefixime", "Cefpodoxime"]
+    },
+    "52": {
+      "medicine": "CEFIX 200 (O)",
+      "alternatives": ["Cefixime", "Cefpodoxime"]
+    },
+    "53": {
+      "medicine": "CEFIX DS 30ML",
+      "alternatives": ["Cefixime", "Cefpodoxime"]
+    },
+    "54": {
+      "medicine": "CEFIX DS STRAWBERRY",
+      "alternatives": ["Cefixime", "Cefpodoxime"]
+    },
+    "55": {
+      "medicine": "CEFIX - O",
+      "alternatives": ["Cefixime", "Cefuroxime"]
+    },
+    "56": {
+      "medicine": "CEFRAX 100",
+      "alternatives": ["Cefixime", "Cefpodoxime"]
+    },
+    "57": {
+      "medicine": "CEFRAX 200",
+      "alternatives": ["Cefixime", "Cefuroxime"]
+    },
+    "58": {
+      "medicine": "CEFRAX CV",
+      "alternatives": ["Cefixime", "Clavulanic Acid"]
+    },
+    "59": {
+      "medicine": "CEFRAX DS 30 ML",
+      "alternatives": ["Cefixime", "Cefuroxime"]
+    },
+    "60": {
+      "medicine": "CEFRAX O 10'S",
+      "alternatives": ["Cefixime", "Cefpodoxime"]
+    },
+    "61": {
+      "medicine": "CEFTAZ-1000MG",
+      "alternatives": ["Ceftazidime", "Ceftriaxone"]
+    },
+    "62": {
+      "medicine": "CEPHADEX 125DT",
+      "alternatives": ["Cefalexin", "Cefadroxil"]
+    },
+    "63": {
+      "medicine": "CEPHADEX 250",
+      "alternatives": ["Cefalexin", "Cefadroxil"]
+    },
+    "64": {
+      "medicine": "CEPHADEX 250 DT",
+      "alternatives": ["Cefalexin", "Cefadroxil"]
+    },
+    "65": {
+      "medicine": "CEPHADEX 500",
+      "alternatives": ["Cefalexin", "Cefadroxil"]
+    },
+    "66": {
+      "medicine": "CEPHADEX DS",
+      "alternatives": ["Cefalexin", "Cefadroxil"]
+    },
+    "67": {
+      "medicine": "CIPDOXIVID - LB CAPS",
+      "alternatives": ["Ciprofloxacin", "Levofloxacin"]
+    },
+    "68": {
+      "medicine": "CIPLOX IV (POUCH) 100 ML",
+      "alternatives": ["Ciprofloxacin", "Levofloxacin"]
+    },
+    "69": {
+      "medicine": "CIPMOX 250 DT",
+      "alternatives": ["Amoxicillin", "Ampicillin"]
+    },
+    "70": {
+      "medicine": "CIPMOX 500 YELLOW 15'S",
+      "alternatives": ["Amoxicillin", "Ampicillin"]
+    },
+    "71": {
+      "medicine": "CIPMOX CV",
+      "alternatives": ["Amoxicillin", "Clavulanic Acid"]
+    },
+    "72": {
+      "medicine": "CIPMOX CV 625 10'S",
+      "alternatives": ["Amoxicillin", "Clavulanic Acid"]
+    },
+    "73": {
+      "medicine": "ETOZOX- T TABS",
+      "alternatives": ["Etoricoxib", "Diclofenac"]
+    },
+    "74": {
+      "medicine": "L QUIN 250",
+      "alternatives": ["Levofloxacin", "Ofloxacin"]
+    },
+    "75": {
+      "medicine": "L QUIN 500",
+      "alternatives": ["Levofloxacin", "Ofloxacin"]
+    },
+    "76": {
+      "medicine": "L QUIN 750",
+      "alternatives": ["Levofloxacin", "Moxifloxacin"]
+    },
+    "77": {
+      "medicine": "LEVOQUIN 250",
+      "alternatives": ["Levofloxacin", "Ofloxacin"]
+    },
+    "78": {
+      "medicine": "LEVOQUIN 500",
+      "alternatives": ["Levofloxacin", "Moxifloxacin"]
+    },
+    "79": {
+      "medicine": "MEGACLOX",
+      "alternatives": ["Amoxicillin", "Cloxacillin"]
+    },
+    "80": {
+      "medicine": "MEGACLOX DT (NEW)",
+      "alternatives": ["Amoxicillin", "Cloxacillin"]
+    },
+    "81": {
+      "medicine": "MUPICIP 5GM",
+      "alternatives": ["Mupirocin", "Neomycin"]
+    },
+    "82": {
+      "medicine": "MUPICIP 10GM",
+      "alternatives": ["Mupirocin", "Neomycin"]
+    },
+    "83": {
+      "medicine": "MUPICIP 15GM",
+      "alternatives": ["Mupirocin", "Neomycin"]
+    },
+    "84": {
+      "medicine": "NOVACLOX-LB",
+      "alternatives": ["Amoxicillin", "Clavulanic Acid"]
+    },
+    "85": {
+      "medicine": "NOVACLAV 625 6'S",
+      "alternatives": ["Amoxicillin", "Clavulanic Acid"]
+    },
+    "86": {
+      "medicine": "NOVACLAV 625 10'S",
+      "alternatives": ["Amoxicillin", "Clavulanic Acid"]
+    },
+    "87": {
+      "medicine": "NOVACLAV DRY",
+      "alternatives": ["Amoxicillin", "Clavulanic Acid"]
+    },
+    "88": {
+      "medicine": "NOVACLOX NF",
+      "alternatives": ["Amoxicillin", "Cloxacillin"]
+    },
+    "89": {
+      "medicine": "OLOX 200",
+      "alternatives": ["Ofloxacin", "Levofloxacin"]
+    },
+    "90": {
+      "medicine": "OLOX OZ",
+      "alternatives": ["Ofloxacin", "Ornidazole"]
+    },
+    "91": {
+      "medicine": "OMNICLAV 375",
+      "alternatives": ["Amoxicillin", "Clavulanic Acid"]
+    },
+    "92": {
+    "medicine": "OMNICLAV 625",
+    "alternatives": ["Amoxicillin", "Clavulanic Acid"]
+    },
+    "93": {
+    "medicine": "OMNICLAV 625",
+    "alternatives": ["Amoxicillin", "Clavulanic Acid"]
+  },
+  "94": {
+    "medicine": "OMNICLAV DS 30ML",
+    "alternatives": ["Amoxicillin", "Clavulanic Acid"]
+  },
+  "95": {
+    "medicine": "PODOCIP 200 10'S",
+    "alternatives": ["Cefpodoxime", "Cefixime"]
+  },
+  "96": {
+    "medicine": "PODOCIP CV",
+    "alternatives": ["Cefpodoxime", "Clavulanic Acid"]
+  },
+  "97": {
+    "medicine": "POWERGYL OZ",
+    "alternatives": ["Ornidazole", "Ofloxacin"]
+  },
+  "98": {
+    "medicine": "ROXEE 150",
+    "alternatives": ["Roxithromycin", "Azithromycin"]
+  },
+  "99": {
+    "medicine": "TARIFLOX 200",
+    "alternatives": ["Ofloxacin", "Levofloxacin"]
+  },
+  "100": {
+    "medicine": "TARIFLOX OZ",
+    "alternatives": ["Ofloxacin", "Ornidazole"]
+  },
+  "101": {
+    "medicine": "ZOCLAR 250",
+    "alternatives": ["Clarithromycin", "Azithromycin"]
+  },
+  "102": {
+    "medicine": "ZOCLAR 500",
+    "alternatives": ["Clarithromycin", "Azithromycin"]
+  },
+  "103": {
+    "medicine": "ALERGIN COLD AND FLU NF",
+    "alternatives": ["Paracetamol", "Phenylephrine"]
+  },
+  "104": {
+    "medicine": "ALERGIN COLD TOTAL",
+    "alternatives": ["Paracetamol", "Chlorpheniramine"]
+  },
+  "105": {
+    "medicine": "CHESTON COLD",
+    "alternatives": ["Paracetamol", "Phenylephrine"]
+  },
+  "106": {
+    "medicine": "CHESTON COLD (AMBER)",
+    "alternatives": ["Paracetamol", "Chlorpheniramine"]
+  },
+  "107": {
+    "medicine": "CHESTON COLD & FLU NF",
+    "alternatives": ["Paracetamol", "Phenylephrine"]
+  },
+  "108": {
+    "medicine": "CHESTON COLD DS 60 ML",
+    "alternatives": ["Paracetamol Syrup", "Phenylephrine Syrup"]
+  },
+  "109": {
+    "medicine": "CHESTON COLD NEW (SILVER)",
+    "alternatives": ["Paracetamol", "Chlorpheniramine"]
+  },
+  "110": {
+    "medicine": "CHESTON COLD TOTAL",
+    "alternatives": ["Paracetamol", "Phenylephrine"]
+  },
+  "111": {
+    "medicine": "CHESTON COLD 20'S",
+    "alternatives": ["Paracetamol", "Chlorpheniramine"]
+  },
+  "112": {
+    "medicine": "CHESTON COLD 60ML",
+    "alternatives": ["Paracetamol Syrup", "Chlorpheniramine Syrup"]
+  },
+  "113": {
+    "medicine": "EASI BREATHE SOFTGEL",
+    "alternatives": ["Guaifenesin", "Phenylephrine"]
+  },
+  "114": {
+    "medicine": "NICIP COLD & FLU NF",
+    "alternatives": ["Paracetamol", "Chlorpheniramine"]
+  },
+  "115": {
+    "medicine": "NIMUPAIN COLD & FLU NF",
+    "alternatives": ["Nimesulide", "Phenylephrine"]
+  },
+  "116": {
+    "medicine": "NOCOLD",
+    "alternatives": ["Paracetamol", "Chlorpheniramine"]
+  },
+  "117": {
+    "medicine": "NOCOLD PLUS",
+    "alternatives": ["Paracetamol", "Phenylephrine"]
+  },
+  "118": {
+    "medicine": "NOCOLD 60ML",
+    "alternatives": ["Paracetamol Syrup", "Chlorpheniramine Syrup"]
+  },
+  "119": {
+    "medicine": "OKACET COLD",
+    "alternatives": ["Paracetamol", "Chlorpheniramine"]
+  },
+  "120": {
+    "medicine": "OKACET COLD TOTAL",
+    "alternatives": ["Paracetamol", "Phenylephrine"]
+  },
+  "121": {
+    "medicine": "ACARCIP-25 TABS",
+    "alternatives": ["Acarbose", "Metformin"]
+  },
+  "122": {
+    "medicine": "ACARCIP-50 TABS",
+    "alternatives": ["Acarbose", "Metformin"]
+  },
+  "123": {
+    "medicine": "CIPDAPLA 10",
+    "alternatives": ["Dapagliflozin", "Metformin"]
+  },
+  "124": {
+    "medicine": "CIPDAPLA 5",
+    "alternatives": ["Dapagliflozin", "Metformin"]
+  },
+  "125": {
+    "medicine": "CIPDAPLA-M 10/1000 TABS",
+    "alternatives": ["Dapagliflozin", "Metformin"]
+  },
+  "126": {
+    "medicine": "CIPDAPLA-M 10/500 TABS",
+    "alternatives": ["Dapagliflozin", "Metformin"]
+  },
+  "127": {
+    "medicine": "CIPVILDIN 50 TABS",
+    "alternatives": ["Vildagliptin", "Metformin"]
+  },
+  "128": {
+    "medicine": "CIPVILDIN-M TABS 50/1000",
+    "alternatives": ["Vildagliptin", "Metformin"]
+  },
+  "129": {
+    "medicine": "CIPVILDIN-M TABS 50/500",
+    "alternatives": ["Vildagliptin", "Metformin"]
+  },
+  "130": {
+    "medicine": "ETHAMCIP 250",
+    "alternatives": ["Ethambutol", "Isoniazid"]
+  },
+  "131": {
+    "medicine": "ETHAMCIP 500",
+    "alternatives": ["Ethambutol", "Isoniazid"]
+  },
+  "132": {
+    "medicine": "GLIMDA 1",
+    "alternatives": ["Glimepiride", "Metformin"]
+  },
+  "133": {
+    "medicine": "GLIMDA 2",
+    "alternatives": ["Glimepiride", "Metformin"]
+  },
+  "134": {
+    "medicine": "GLIMDA 3 TAB",
+    "alternatives": ["Glimepiride", "Metformin"]
+  },
+  "135": {
+    "medicine": "GLIMDA-MV 1",
+    "alternatives": ["Glimepiride", "Metformin"]
+  },
+  "136": {
+    "medicine": "GLIMDA-MV 2",
+    "alternatives": ["Glimepiride", "Metformin"]
+  },
+  "137": {
+    "medicine": "GLINIL",
+    "alternatives": ["Glibenclamide", "Metformin"]
+  },
+  "138": {
+    "medicine": "GLINIL M",
+    "alternatives": ["Glibenclamide", "Metformin"]
+  },
+  "139": {
+    "medicine": "GLYGARD",
+    "alternatives": ["Gliclazide", "Metformin"]
+  },
+  "140": {
+    "medicine": "GLYGARD M",
+    "alternatives": ["Gliclazide", "Metformin"]
+  },
+  "141": {
+    "medicine": "METFOR 500",
+    "alternatives": ["Metformin", "Glimepiride"]
+  },
+  "142": {
+    "medicine": "OKAMET 500",
+    "alternatives": ["Metformin", "Glimepiride"]
+  },
+  "143": {
+    "medicine": "OKAMET 500 SR",
+    "alternatives": ["Metformin", "Glimepiride"]
+  },
+  "144": {
+    "medicine": "OKAMET GM 1002 TABS",
+    "alternatives": ["Metformin", "Glimepiride"]
+  },
+  "145": {
+    "medicine": "OKAMET GM 501 TABS",
+    "alternatives": ["Metformin", "Glimepiride"]
+  },
+  "146": {
+    "medicine": "OKAMET GM 502 TABS",
+    "alternatives": ["Metformin", "Glimepiride"]
+  },
+  "147": {
+    "medicine": "OKAMET GMP 1 TABS",
+    "alternatives": ["Metformin", "Pioglitazone"]
+  },
+  "148": {
+    "medicine": "OKAMET GMP 2 TABS",
+    "alternatives": ["Metformin", "Pioglitazone"]
+  },
+  "149": {
+    "medicine": "TENEPLA",
+    "alternatives": ["Teneligliptin", "Metformin"]
+  },
+  "150": {
+    "medicine": "TENEPLA M 500",
+    "alternatives": ["Teneligliptin", "Metformin"]
+  },
+  "151": {
+    "medicine": "TENEPLA M 1000",
+    "alternatives": ["Teneligliptin", "Metformin"]
+  },
+  "152": {
+    "medicine": "TENEPLA M 1000 TABS",
+    "alternatives": ["Teneligliptin", "Metformin"]
+  },
+  "153": {
+    "medicine": "VOGLICIP 0.2",
+    "alternatives": ["Voglibose", "Acarbose"]
+  },
+  "154": {
+    "medicine": "VOGLICIP M 0.2 TABS",
+    "alternatives": ["Voglibose", "Metformin"]
+  },
+  "155": {
+    "medicine": "VOGLICIP 0.3",
+    "alternatives": ["Voglibose", "Acarbose"]
+  },
+  "156": {
+    "medicine": "OFLOX OZ NF 30 ML",
+    "alternatives": ["Ofloxacin", "Ornidazole"]
+  }
+}
