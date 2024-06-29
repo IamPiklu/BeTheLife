@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const fs = require('fs');
 const path = require('path');
 const app = express();
 
@@ -79,6 +80,12 @@ app.get('/bloodbank', (req, res) => {
 app.get('/hospital', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'maps/hospital.html'));
 });
+
+// Serve the medicine finder page
+app.get('/medicine', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'medicine.html'));
+});
+
 // API endpoint to fetch hospital data
 app.get('/api/hospitals', async (req, res) => {
     try {
@@ -120,6 +127,39 @@ app.get('/api/donars', async (req, res) => {
     } catch (err) {
         console.error('Error fetching donars:', err);
         res.status(500).json({ error: err.message });
+    }
+});
+
+// Load the medicine JSON data
+let medicines = {};
+
+fs.readFile(path.join(__dirname, 'data', 'medicine.json'), 'utf8', (err, data) => {
+    if (err) {
+        console.error('Error reading medicine.json:', err);
+        return;
+    }
+    const jsonData = JSON.parse(data);
+    jsonData.forEach(item => {
+        item.alternatives.forEach(alt => {
+            if (!medicines[alt.name]) {
+                medicines[alt.name] = [];
+            }
+            medicines[alt.name].push({
+                medicine: item.medicine,
+                price: item.price,
+                alt_price: alt.price
+            });
+        });
+    });
+});
+
+// API endpoint to fetch medicine data
+app.get('/api/medicines', (req, res) => {
+    const altMedicine = req.query.medicine;
+    if (medicines[altMedicine]) {
+        res.json(medicines[altMedicine]);
+    } else {
+        res.status(404).json({ error: 'No alternative found' });
     }
 });
 
