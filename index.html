@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeTL - Blood and Organ Donation</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            height: 90%;
+        }
+        .sidebar {
+            width: 350px;
+            background-color: #00a2e8;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex-grow: 1;
+            background-color: #f0f0f0;
+            background-image: url('./bg.jpg');
+            background-size: cover;
+            background-position: bottom right;
+            overflow-y: auto;
+        }
+        .nav-item {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+        .nav-item svg {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+            fill: white;
+        }
+        .nav-item a {
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 7px;
+            padding-left: 10px;
+        }
+        .top-nav {
+            display: flex;
+            justify-content: flex-end;
+            background-color: #B4B4B8;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .top-nav a {
+            margin-left: 20px;
+            color: #333;
+            text-decoration: none;
+            font-size: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;   
+        }
+        .main-content {
+            /* background-color: white; */
+            /* margin: 20px; */
+            padding-left: 20px;
+            border-radius: 5px;
+        }
+        .content-section {
+            margin-bottom: 30px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+            font-size: 27px;
+        }
+        .content-section h2 {
+            color: black;
+            margin-top: 0;
+        }
+        .button{
+            color: red;
+        }
+        .button2 {
+            background-color: #00a2e8;
+            color: black;
+            font-size: 25px;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            width: 9rem;
+        }
+        #about-us {
+            display: flex;
+            align-items: center;
+        }
+        #about-us img {
+            margin-left: 20px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .logo {
+            position: relative;
+            left: -85px;
+            top: -30px;
+        }
+        .ele:hover {
+            opacity: 0.5;
+            color: blue;
+        }
+        #about {
+            font-size: 23px;
+        }
+        footer {
+        
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: column;
+
+  background-color: #89CFF3;
+  text-align: center;
+}
+
+.footer-content h3 {
+  /* font-size: 2.1rem; */
+  font-weight: 500;
+  text-transform: capitalize;
+
+}
+
+.footer-content p {
+  max-width: 500px;
+
+  margin: 10px auto;
+
+  line-height: 28px;
+
+  font-size: 14px;
+
+  color: #ffffff;
+}
+
+
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+
+  background: #000;
+
+  width: 100vw;
+
+  padding: 5px;
+
+
+
+  text-align: center;
+  color: #fff;
+}
+
+.footer-bottom p {
+  float: left;
+
+  font-size: 14px;
+
+  word-spacing: 2px;
+}
+
+.footer-bottom p a {
+  color: #ccc;
+
+  font-size: 16px;
+
+  text-decoration: none;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+}
+@media (max-width: 500px) {
+  .footer-bottom p {
+    float: none;
+  }
+}
+#im{
+    border: 2px solid black;
+    border-radius: 50px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img class="logo" src="./logo2-removebg-preview.png" alt="Logo" height="135">
+            <div class="nav-item">
+                <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                <a class="ele" href="index.html">HOME</a>
+            </div>
+            <div class="nav-item">
+                <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                <a class="ele" href="profile.html">PROFILE</a>
+            </div>
+            <div class="nav-item">
+                <svg viewBox="0 0 24 24"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                <a class="ele" href="status.html">STATUS</a>
+            </div>
+            <div class="nav-item">
+                <svg viewBox="0 0 24 24"><path d="M11 7L9.6 8.4l2.6 2.6H2v2h10.2l-2.6 2.6L11 17l5-5-5-5zm9 12h-8v2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8v2h8v14z"/></svg>
+                <a class="ele" href="report.html">REPORT</a>
+            </div>
+            <div class="nav-item">
+                <svg viewBox="0 0 24 24"><path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                <a class="ele" href="#">LOGIN</a>
+            </div>
+            <div class="nav-item">
+                <svg viewBox="0 0 24 24"><path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"/></svg>
+                <a class="ele" href="faq.html   ">FAQ</a>
+            </div>
+            <div class="nav-item">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg>
+                <a class="ele" href="support.html">SUPPORT</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="top-nav">
+                <a href="#">UPLOAD PRESCRIPTION</a>
+                <a href="#">BLOOD BANKS</a>
+                <a href="#">HOSPITALS/NURSING HOME</a>
+                <a href="#">NGO LISTING</a>
+            </div>
+            <div class="main-content">
+                <div class="content-section">
+                    <h2>Seeking Blood or Organ Donation Assistance!</h2>
+                    <p>At BeTL, we're here to help you find the support you need. Whether you're in urgent need of blood or seeking an organ donor, our platform connects you with caring individuals ready to assist. We prioritize your well-being and ensure complete confidentiality and compliance with all regulatory standards. Together, we can make a difference in someone's life.</p>
+                <p><b><a href="#" class="button">Click here</a> to receive help.</b></p>
+                </div>
+                
+                <div class="content-section">
+                    <h2>Be a Part to this amazing journey with us</h2>
+                    <p>At BeTL, we aim to revolutionize healthcare accessibility and efficiency. We invite you to join us on this meaningful journey towards better healthcare for all.</p>
+                    <p>Whether you're considering becoming a blood or organ donor, seeking assistance, or simply want to support our mission, you're welcome to join us. Together, we can make a significant impact by fostering connections, providing vital resources, and promoting smoother healthcare experiences.</p>
+                    <p>Let's work together to build healthier communities and improve lives. Your support and participation are invaluable as we strive to create a world where everyone has access to life-saving resources.</p>
+                    <p>Join us today at BeTL and be a part of this transformative mission.</p>
+                    <p>Warm regards,<br>The BeTL Team</p>
+                    <a href="#" class="button2">Be a Donor</a>
+                </div>
+                
+                <div class="content-section" id="about-us">
+                    <div>
+                        <h2>About Us</h2>
+                        <p id="about">Welcome to [Medical Website Name], your dedicated online platform aimed at enhancing healthcare accessibility and efficiency. At [Medical Website Name], we are committed to bridging gaps in healthcare by facilitating swift connections between blood and organ donors and recipients, providing information on cost-effective medications, and offering solutions to hospital-related challenges.
+                            Our Mission
+                            Our mission is to make a meaningful impact in healthcare by leveraging                                                                                                technology to improve the lives of individuals and communities. We strive                                                                                                         to empower users with the resources they need to navigate medical                                                                                                        challenges with confidence and ease.
+                            What We Offer
+                            Blood and Organ Donation Connections: We maintain a                                                                                                                             comprehensive database of blood and organ donors, facilitating                                                                                                                     quick and reliable matches for those in urgent need.
+                            Medication Information: Discover affordable medication options                                                                                                             through our platform, including generic alternatives and discounts,                                                                                                              helping you make informed decisions about your healthcare expenses.
+                            Hospital Problem Resolution: We provide a platform for users to report                                                                                                      and resolve hospital-related issues promptly, ensuring a smoother healthcare                                                                                                experience.
+                            Why Choose Us?
+                            User-Centric Approach: We prioritize the needs and experiences of our users, offering intuitive tools and reliable support to navigate healthcare challenges effectively.
+                            Privacy and Security: Your privacy is paramount to us. We adhere to stringent data protection standards to safeguard your personal information.
+                            Community Impact: By fostering connections and providing valuable resources, we contribute to building healthier communities and improving healthcare outcomes.</p>
+                    </div>
+                    <img src="icon.jpg" id="im" alt="BeTL Logo">
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer>
+
+            <div class="footer-content">
+          
+              <h3>BeTL</h3>
+          
+              <p>Address:
+                 New Town, University Area, Plot No. III, B/5, New Town Rd, Action Area III, Newtown, New Town, West Bengal 700160<br>
+                Contact: +91 9733586***<br>Mail: contact@betl.in
+                </p>
+          
+            </div>
+          
+            <div class="footer-bottom">
+              <p>Copyright &copy <span id="year">2024</span> Future Fusion(Hack4Bengal)</p>
+            </div>  
+    </footer>
+</body>
+</html>
