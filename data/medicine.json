@@ -1,0 +1,314 @@
+[
+  {
+    "medicine": "DOMCET",
+    "price": 30,
+    "alternatives": [
+      {"name": "Domperidone", "price": 50},
+      {"name": "Ondansetron", "price": 70}
+    ]
+  },
+  {
+    "medicine": "DOMPAR",
+    "price": 25,
+    "alternatives": [
+      {"name": "Domperidone", "price": 50},
+      {"name": "Metoclopramide", "price": 45}
+    ]
+  },
+  {
+    "medicine": "ACI FREE (LEMON)",
+    "price": 20,
+    "alternatives": [
+      {"name": "Aluminum Hydroxide", "price": 30},
+      {"name": "Magnesium Hydroxide", "price": 40}
+    ]
+  },
+  {
+    "medicine": "ACI FREE (PUDINA)",
+    "price": 20,
+    "alternatives": [
+      {"name": "Aluminum Hydroxide", "price": 30},
+      {"name": "Simethicone", "price": 35}
+    ]
+  },
+  {
+    "medicine": "ACI FREE (REGULAR)",
+    "price": 20,
+    "alternatives": [
+      {"name": "Calcium Carbonate", "price": 35},
+      {"name": "Magnesium Hydroxide", "price": 40}
+    ]
+  },
+  {
+    "medicine": "ACI FREE (ZEERA)",
+    "price": 20,
+    "alternatives": [
+      {"name": "Sodium Bicarbonate", "price": 25},
+      {"name": "Aluminum Hydroxide", "price": 30}
+    ]
+  },
+  {
+    "medicine": "ACIGENE GEL 170ML MINT",
+    "price": 60,
+    "alternatives": [
+      {"name": "Magaldrate", "price": 70},
+      {"name": "Simethicone", "price": 75}
+    ]
+  },
+  {
+    "medicine": "DIGUSIL MPS (MINT)",
+    "price": 50,
+    "alternatives": [
+      {"name": "Aluminum Hydroxide", "price": 60},
+      {"name": "Magnesium Hydroxide", "price": 65}
+    ]
+  },
+  {
+    "medicine": "OXECAINE 170ML",
+    "price": 80,
+    "alternatives": [
+      {"name": "Oxetacaine", "price": 100},
+      {"name": "Antacid (combination)", "price": 110}
+    ]
+  },
+  {
+    "medicine": "ALERGIN",
+    "price": 15,
+    "alternatives": [
+      {"name": "Cetirizine", "price": 20},
+      {"name": "Loratadine", "price": 25}
+    ]
+  },
+  {
+    "medicine": "ALERGIN - L",
+    "price": 20,
+    "alternatives": [
+      {"name": "Levocetirizine", "price": 25},
+      {"name": "Fexofenadine", "price": 30}
+    ]
+  },
+  {
+    "medicine": "BILACIP TABS",
+    "price": 25,
+    "alternatives": [
+      {"name": "Bilastine", "price": 30},
+      {"name": "Loratadine", "price": 35}
+    ]
+  },
+  {
+    "medicine": "BILACIP-M",
+    "price": 30,
+    "alternatives": [
+      {"name": "Bilastine", "price": 35},
+      {"name": "Montelukast", "price": 40}
+    ]
+  },
+  {
+    "medicine": "CETCIP",
+    "price": 15,
+    "alternatives": [
+      {"name": "Cetirizine", "price": 20},
+      {"name": "Levocetirizine", "price": 25}
+    ]
+  },
+  {
+    "medicine": "CETCIP - L",
+    "price": 20,
+    "alternatives": [
+      {"name": "Levocetirizine", "price": 25},
+      {"name": "Desloratadine", "price": 30}
+    ]
+  },
+  {
+    "medicine": "CETCIP 30 ML",
+    "price": 25,
+    "alternatives": [
+      {"name": "Cetirizine Syrup", "price": 30},
+      {"name": "Levocetirizine Syrup", "price": 35}
+    ]
+  },
+  {
+    "medicine": "EMIN",
+    "price": 10,
+    "alternatives": [
+      {"name": "Promethazine", "price": 15},
+      {"name": "Meclizine", "price": 20}
+    ]
+  },
+  {
+    "medicine": "FEXIGRA 120 TABS",
+    "price": 40,
+    "alternatives": [
+      {"name": "Fexofenadine", "price": 45},
+      {"name": "Loratadine", "price": 50}
+    ]
+  },
+  {
+    "medicine": "FEXIGRA 180 TABS",
+    "price": 45,
+    "alternatives": [
+      {"name": "Fexofenadine", "price": 50},
+      {"name": "Desloratadine", "price": 55}
+    ]
+  },
+  {
+    "medicine": "FEXIGRA-M TABS",
+    "price": 50,
+    "alternatives": [
+      {"name": "Fexofenadine", "price": 55},
+      {"name": "Montelukast", "price": 60}
+    ]
+  },
+  {
+    "medicine": "LORATIN",
+    "price": 20,
+    "alternatives": [
+      {"name": "Loratadine", "price": 25},
+      {"name": "Cetirizine", "price": 30}
+    ]
+  },
+  {
+    "medicine": "MONTECIP BL TABS",
+    "price": 25,
+    "alternatives": [
+      {"name": "Montelukast", "price": 30},
+      {"name": "Levocetirizine", "price": 35}
+    ]
+  },
+  {
+    "medicine": "MONTECIP LC JUNIOR SYRUP",
+    "price": 30,
+    "alternatives": [
+      {"name": "Montelukast Syrup", "price": 35},
+      {"name": "Levocetirizine Syrup", "price": 40}
+    ]
+  },
+  {
+    "medicine": "MONTECIP LC TABS",
+    "price": 35,
+    "alternatives": [
+      {"name": "Montelukast", "price": 40},
+      {"name": "Levocetirizine", "price": 45}
+    ]
+  },
+  {
+    "medicine": "MONTECIP-FX TABS",
+    "price": 40,
+    "alternatives": [
+      {"name": "Montelukast", "price": 45},
+      {"name": "Fexofenadine", "price": 50}
+    ]
+  },
+  {
+    "medicine": "NEW OKACET",
+    "price": 10,
+    "alternatives": [
+      {"name": "Cetirizine", "price": 15},
+      {"name": "Levocetirizine", "price": 20}
+    ]
+  },
+  {
+    "medicine": "OKACET 10 MG",
+    "price": 15,
+    "alternatives": [
+      {"name": "Cetirizine", "price": 20},
+      {"name": "Desloratadine", "price": 25}
+    ]
+  },
+  {
+    "medicine": "OKACET - L",
+    "price": 20,
+    "alternatives": [
+      {"name": "Levocetirizine", "price": 25},
+      {"name": "Fexofenadine", "price": 30}
+    ]
+  },
+  {
+    "medicine": "OKACET - L 30ML",
+    "price": 25,
+    "alternatives": [
+      {"name": "Levocetirizine Syrup", "price": 30},
+      {"name": "Cetirizine Syrup", "price": 35}
+    ]
+  },
+  {
+    "medicine": "OKACET SYRUP",
+    "price": 30,
+    "alternatives": [
+      {"name": "Cetirizine Syrup", "price": 35},
+      {"name": "Loratadine Syrup", "price": 40}
+    ]
+  },
+  {
+    "medicine": "VERTIRON",
+    "price": 35,
+    "alternatives": [
+      {"name": "Betahistine", "price": 40},
+      {"name": "Meclizine", "price": 45}
+    ]
+  },
+  {
+    "medicine": "DERICIP",
+    "price": 40,
+    "alternatives": [
+      {"name": "Theophylline", "price": 45},
+      {"name": "Doxofylline", "price": 50}
+    ]
+  },
+  {
+    "medicine": "DERIPHYLLIN INJECTION",
+    "price": 45,
+    "alternatives": [
+      {"name": "Theophylline", "price": 50},
+      {"name": "Aminophylline", "price": 55}
+    ]
+  },
+  {
+    "medicine": "DERIPHYLLIN OD 150MG",
+    "price": 50,
+    "alternatives": [
+      {"name": "Theophylline", "price": 55},
+      {"name": "Doxofylline", "price": 60}
+    ]
+  },
+  {
+    "medicine": "DERIPHYLLIN OD 300MG",
+    "price": 55,
+    "alternatives": [
+      {"name": "Theophylline", "price": 60},
+      {"name": "Doxofylline", "price": 65}
+    ]
+  },
+  {
+    "medicine": "EBAST",
+    "price": 30,
+    "alternatives": [
+      {"name": "Ebastine", "price": 35},
+      {"name": "Loratadine", "price": 40}
+    ]
+  },
+  {
+    "medicine": "EBAST 20MG",
+    "price": 35,
+    "alternatives": [
+      {"name": "Ebastine", "price": 40},
+      {"name": "Fexofenadine", "price": 45}
+    ]
+  },
+  {
+    "medicine": "EBAST DC",
+    "price": 40,
+    "alternatives": [
+      {"name": "Ebastine", "price": 45},
+      {"name": "Desloratadine", "price": 50}
+    ]
+  },
+  {
+    "medicine": "EBAST M",
+    "price": 45,
+    "alternatives": [
+      {"name": "Ebastine", "price": 50},
+      {"name": "Montelukast", "price": 55}
+    ]
+  }
+]

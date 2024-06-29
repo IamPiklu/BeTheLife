@@ -1,0 +1,132 @@
+[
+    {
+        "unique-id": 1,
+        "name": "Calcutta Foundation",
+        "address": "Kolkata",
+        "contact": "9876543210",
+        "coordinates": {
+            "latitude": 22.5726,
+            "longitude": 88.3639
+        }
+    },
+    {
+        "unique-id": 2,
+        "name": "Rural Upliftment Society",
+        "address": "Kolkata",
+        "contact": "9876543210",
+        "coordinates": {
+            "latitude": 22.5858,
+            "longitude": 88.4041
+        }
+    },
+    {
+        "unique-id": 3,
+        "name": "Bright Future Foundation",
+        "address": "Kolkata",
+        "contact": "9876543210",
+        "coordinates": {
+            "latitude": 22.5836,
+            "longitude": 88.3702
+        }
+    },
+    {
+        "unique-id": 4,
+        "name": "Hope and Care Trust",
+        "address": "Kolkata",
+        "contact": "9876543210",
+        "coordinates": {
+            "latitude": 22.5763,
+            "longitude": 88.4189
+        }
+    },
+    {
+        "unique-id": 5,
+        "name": "Sarada Support Group",
+        "address": "Kolkata",
+        "contact": "9876543210",
+        "coordinates": {
+            "latitude": 22.5637,
+            "longitude": 88.3596
+        }
+    },
+    {
+        "unique-id": 6,
+        "name": "Sahara Charitable Trust",
+        "address": "Kolkata",
+        "contact": "9876543210",
+        "coordinates": {
+            "latitude": 22.5648,
+            "longitude": 88.4016
+        }
+    },
+    {
+        "unique-id": 7,
+        "name": "SOS Children's Village",
+        "address": "Kolkata",
+        "contact": "9876543210",
+        "coordinates": {
+            "latitude": 22.5664,
+            "longitude": 88.3533
+        }
+    },
+    {
+        "unique-id": 8,
+        "name": "Snehalaya Homes",
+        "address": "Kolkata",
+        "contact": "9876543210",
+        "coordinates": {
+            "latitude": 22.5819,
+            "longitude": 88.4126
+        }
+    },
+    {
+        "unique-id": 9,
+        "name": "Swayam Women Support",
+        "address": "Kolkata",
+        "contact": "9876543210",
+        "coordinates": {
+            "latitude": 22.5739,
+            "longitude": 88.3681
+        }
+    },
+    {
+        "unique-id": 10,
+        "name": "Udayan Care Center",
+        "address": "Kolkata",
+        "contact": "9876543210",
+        "coordinates": {
+            "latitude": 22.5867,
+            "longitude": 88.3722
+        }
+    },
+    {
+        "unique-id": 11,
+        "name": "Vivekananda Mission Ashram",
+        "address": "Kolkata",
+        "contact": "9876543210",
+        "coordinates": {
+            "latitude": 22.5747,
+            "longitude": 88.3501
+        }
+    },
+    {
+        "unique-id": 12,
+        "name": "Samaritan Help Mission",
+        "address": "Kolkata",
+        "contact": "9876543210",
+        "coordinates": {
+            "latitude": 22.5624,
+            "longitude": 88.4050
+        }
+    },
+    {
+        "unique-id": 13,
+        "name": "Snehi Foundation",
+        "address": "Kolkata",
+        "contact": "9876543210",
+        "coordinates": {
+            "latitude": 22.5710,
+            "longitude": 88.3628
+        }
+    }
+]

@@ -1,0 +1,202 @@
+[
+    {
+        "unique-id": 1,
+        "name": "Central Blood Bank",
+        "address": "Maniktala, Kolkata",
+        "contact": "033-2352-2333",
+        "coordinates": {
+            "latitude": 22.5800,
+            "longitude": 88.3689
+        }
+    },
+    {
+        "unique-id": 2,
+        "name": "Apollo Gleneagles Blood Bank",
+        "address": "EM Bypass, Kolkata",
+        "contact": "033-2320-2122",
+        "coordinates": {
+            "latitude": 22.5617,
+            "longitude": 88.4051
+        }
+    },
+    {
+        "unique-id": 3,
+        "name": "Ruby General Hospital Blood Bank",
+        "address": "Kasba Golpark, Kolkata",
+        "contact": "033-6605-7000",
+        "coordinates": {
+            "latitude": 22.5123,
+            "longitude": 88.4006
+        }
+    },
+    {
+        "unique-id": 4,
+        "name": "AMRI Hospital Blood Bank",
+        "address": "Salt Lake, Kolkata",
+        "contact": "033-4008-7000",
+        "coordinates": {
+            "latitude": 22.5863,
+            "longitude": 88.4188
+        }
+    },
+    {
+        "unique-id": 5,
+        "name": "NRS Medical College Blood Bank",
+        "address": "Sealdah, Kolkata",
+        "contact": "033-2265-3215",
+        "coordinates": {
+            "latitude": 22.5677,
+            "longitude": 88.3674
+        }
+    },
+    {
+        "unique-id": 6,
+        "name": "IPGMER Blood Bank",
+        "address": "A.J.C. Bose Road, Kolkata",
+        "contact": "033-2204-1101",
+        "coordinates": {
+            "latitude": 22.5411,
+            "longitude": 88.3498
+        }
+    },
+    {
+        "unique-id": 7,
+        "name": "Peerless Hospital Blood Bank",
+        "address": "Panchasayar, Kolkata",
+        "contact": "033-2462-2390",
+        "coordinates": {
+            "latitude": 22.4847,
+            "longitude": 88.3801
+        }
+    },
+    {
+        "unique-id": 8,
+        "name": "B.M. Birla Heart Research Centre Blood Bank",
+        "address": "Alipore, Kolkata",
+        "contact": "033-3040-3040",
+        "coordinates": {
+            "latitude": 22.5375,
+            "longitude": 88.3378
+        }
+    },
+    {
+        "unique-id": 9,
+        "name": "Siliguri District Hospital Blood Bank",
+        "address": "Siliguri, Darjeeling",
+        "contact": "0353-251-8888",
+        "coordinates": {
+            "latitude": 26.7100,
+            "longitude": 88.4285
+        }
+    },
+    {
+        "unique-id": 10,
+        "name": "North Bengal Medical College Blood Bank",
+        "address": "Sushrutanagar, Darjeeling",
+        "contact": "0353-258-5478",
+        "coordinates": {
+            "latitude": 26.6292,
+            "longitude": 88.4375
+        }
+    },
+    {
+        "unique-id": 11,
+        "name": "Midnapore Medical College Blood Bank",
+        "address": "Midnapore",
+        "contact": "03222-274321",
+        "coordinates": {
+            "latitude": 22.4213,
+            "longitude": 87.3212
+        }
+    },
+    {
+        "unique-id": 12,
+        "name": "Burdwan Medical College Blood Bank",
+        "address": "Burdwan",
+        "contact": "0342-2558646",
+        "coordinates": {
+            "latitude": 23.2413,
+            "longitude": 87.8655
+        }
+    },
+    {
+        "unique-id": 13,
+        "name": "Bankura Sammilani Medical College Blood Bank",
+        "address": "Bankura",
+        "contact": "03242-243552",
+        "coordinates": {
+            "latitude": 23.2324,
+            "longitude": 87.0644
+        }
+    },
+    {
+        "unique-id": 14,
+        "name": "Purulia District Hospital Blood Bank",
+        "address": "Purulia",
+        "contact": "03252-224152",
+        "coordinates": {
+            "latitude": 23.3322,
+            "longitude": 86.3628
+        }
+    },
+    {
+        "unique-id": 15,
+        "name": "Murshidabad Medical College Blood Bank",
+        "address": "Berhampore, Murshidabad",
+        "contact": "03482-253718",
+        "coordinates": {
+            "latitude": 24.1006,
+            "longitude": 88.2506
+        }
+    },
+    {
+        "unique-id": 16,
+        "name": "Raiganj District Hospital Blood Bank",
+        "address": "Raiganj, Uttar Dinajpur",
+        "contact": "03523-252256",
+        "coordinates": {
+            "latitude": 25.6178,
+            "longitude": 88.1245
+        }
+    },
+    {
+        "unique-id": 17,
+        "name": "Malda Medical College Blood Bank",
+        "address": "Malda",
+        "contact": "03512-221085",
+        "coordinates": {
+            "latitude": 25.0110,
+            "longitude": 88.1411
+        }
+    },
+    {
+        "unique-id": 18,
+        "name": "Jalpaiguri District Hospital Blood Bank",
+        "address": "Jalpaiguri",
+        "contact": "03561-256633",
+        "coordinates": {
+            "latitude": 26.5405,
+            "longitude": 88.7196
+        }
+    },
+    {
+        "unique-id": 19,
+        "name": "Cooch Behar District Hospital Blood Bank",
+        "address": "Cooch Behar",
+        "contact": "03582-222852",
+        "coordinates": {
+            "latitude": 26.3304,
+            "longitude": 89.4511
+        }
+    },
+    {
+        "unique-id": 20,
+        "name": "Alipurduar District Hospital Blood Bank",
+        "address": "Alipurduar",
+        "contact": "03564-255152",
+        "coordinates": {
+            "latitude": 26.4910,
+            "longitude": 89.5271
+        }
+    }
+]
