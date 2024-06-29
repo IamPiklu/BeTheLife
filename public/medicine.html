@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Finder</title>
+    <!-- Include Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center"></body> <!-- Removed h-screen -->
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md mt-6">
+        <h1 class="text-2xl font-bold mb-6 text-center">Find Cheaper Alternative Medicine</h1>
+        <div class="mb-4">
+            <input type="text" id="altMedicine" placeholder="Enter alternative medicine" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div class="flex justify-center">
+            <button onclick="findMedicine()" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Search</button>
+        </div>
+        <div id="result" class="mt-6"></div>
+    </div>
+
+    <script>
+        async function findMedicine() {
+            const altMedicine = document.getElementById('altMedicine').value;
+            const response = await fetch(`/api/medicines?medicine=${altMedicine}`);
+            const data = await response.json();
+
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '';
+            if (response.ok) {
+                data.forEach(item => {
+                    resultDiv.innerHTML += `
+                        <div class="bg-gray-100 p-4 mb-4 rounded-lg shadow-md">
+                            <p class="text-lg font-semibold">Prescribed Medicine: ${altMedicine} (Price: ₹${item.alt_price})</p>
+                            <p class="text-lg font-semibold">Generic Medicine: ${item.medicine} (Price: ₹${item.price})</p>
+                        </div>
+                    `;
+                });
+            } else {
+                resultDiv.innerHTML = `<p class="text-red-500">${data.error}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>

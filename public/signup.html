@@ -1,77 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignUp</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        body {
-           
-        }
-        .width{
-            width: 35rem;
-        }
-    </style>
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
 </head>
-
-<body class=" min-h-screen flex items-center justify-center">
-    <div class="container mx-auto flex justify-center items-center">
-        <div class="box border-2 border-blue-200 p-10 rounded-lg width">
-            <p class="heading text-center text-3xl text-white font-bold mb-5">Sign Up</p>
-            <form class="space-y-4">
-                <div>
-                    <label for="fullName" class="block text-lg text-white font-medium">Full Name:</label>
-                    <input type="text" placeholder="Enter full name" id="fullName"
-                        class="input w-full h-9 p-2 rounded-lg border-2 border-blue-200 text-lg outline-none mt-1">
-                </div>
-
-                <div>
-                    <label for="email" class="block text-lg text-white font-medium">Email:</label>
-                    <input type="email" placeholder="Enter email" id="email"
-                        class="input w-full h-9 p-2 rounded-lg border-2 border-blue-200 text-lg outline-none mt-1">
-                </div>
-
-                <div>
-                    <label for="phone" class="block text-lg text-white font-medium">Phone No:</label>
-                    <input type="text" placeholder="Enter phone no" id="phone"
-                        class="input w-full h-9 p-2 rounded-lg border-2 border-blue-200 text-lg outline-none mt-1">
-                </div>
-
-                <div>
-                    <label for="password" class="block text-lg text-white font-medium">Password:</label>
-                    <input type="password" placeholder="Enter password" id="password"
-                        class="input w-full h-9 p-2 rounded-lg border-2 border-blue-200 text-lg outline-none mt-1">
-                </div>
-
-                <div>
-                    <label for="confirmPassword" class="block text-lg text-white font-medium">Confirm Password:</label>
-                    <input type="password" placeholder="Confirm password" id="confirmPassword"
-                        class="input w-full h-9 p-2 rounded-lg border-2 border-blue-200 text-lg outline-none mt-1">
-                </div>
-
-                <div>
-                    <h3 class=" h-9 mb-2 text-lg font-medium text-white">Documents:</h3>
-                    <label for="myfile"
-                        class="w-full p-2  bg-blue-400 text-white border-2 border-blue-200 rounded cursor-pointer hover:bg-gray-700 transition duration-300 text-center">Upload
-                        Documents</label>
-                    <input type="file" id="myfile" class="opacity-0 absolute inset-0 w-5 h-5 cursor-pointer">
-                </div>
-
-                <div>
-                    <label for="bloodGroup" class="block text-lg text-white font-medium">Blood Group:</label>
-                    <input type="text" placeholder="Enter blood group" id="bloodGroup"
-                        class="input w-full h-9 p-2 rounded-lg border-2 border-blue-200 text-lg outline-none mt-1">
-                </div>
-            </form>
-            <center>
-                <button
-                    class="submit mt-5 font-bold text-lg border-2 border-blue-200 rounded-lg px-5 py-2 bg-blue-400 text-white hover:bg-blue-700 cursor-pointer">Sign
-                    Up</button>
-            </center>
-        </div>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="w-full max-w-md bg-white shadow-md rounded px-8 py-6">
+        <h2 class="text-2xl font-bold mb-6 text-center">Sign Up</h2>
+        <form action="/api/signup" method="POST" enctype="multipart/form-data">
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" name="name" id="name" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" name="email" id="email" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="phone">Phone</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" name="phone" id="phone" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="password">Password</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="password" name="password" id="password" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="bloodGroup">Blood Group</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" name="bloodGroup" id="bloodGroup" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="myfile">Upload Documents</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="file" name="myfile" id="myfile">
+            </div>
+            <div class="text-center">
+                <button type="submit" class="w-full py-2 px-4 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-700 transition duration-200">Sign Up</button>
+            </div>
+        </form>
     </div>
 </body>
-
 </html>

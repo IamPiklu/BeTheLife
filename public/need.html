@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Need Help</title>
+    <style>
+        * {
+            color: black;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('bg.jpg'); /* Add your logo image path here */
+            background-repeat: no-repeat; /* Prevent the logo from repeating */
+            background-position: center; 
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative; /* Added to enable z-indexing */
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.2); /* Transparent background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid skyblue; /* Sky blue border */
+            width: 100%;
+            max-width: 400px;
+            color: black; /* White text color */
+            position: relative; /* Added to enable z-indexing */
+            z-index: 1; /* Ensures this is above the background */
+        }
+        h1 {
+            text-align: center;
+            color: black;
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            color: black;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="tel"], textarea, select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid black;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.1); /* Slightly transparent input fields */
+            color: black; /* White text color */
+        }
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .checkbox-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
+        .checkbox-group input {
+            margin-right: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff; /* Blue button */
+            color: black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Need Help</h1>
+        <form id="need-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="contact">Contact Number</label>
+            <input type="tel" id="contact" name="contact" required>
+            
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required>
+            
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" id="bloodGroupCheckbox" onclick="toggleInput('bloodGroup', 'organ')"> Blood Group
+                </label>
+                <label>
+                    <input type="checkbox" id="organCheckbox" onclick="toggleInput('organ', 'bloodGroup')"> Organ Required
+                </label>
+            </div>
+
+            <label for="bloodGroup" id="bloodGroupLabel">Blood Group</label>
+            <select id="bloodGroup" name="bloodGroup" >
+                <option value="" disabled selected>Select Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+            
+            <label for="organ" id="organLabel" style="display:none;">Organ Required</label>
+            <input type="text" id="organ" name="organ" style="display:none;" placeholder="e.g., Kidney, Liver">
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        const needform = document.getElementById('need-form');
+        needform.addEventListener("submit", async function(event) {
+            event.preventDefault();
+            const formData = new FormData(needform);
+            const data = {};
+            for (let key of formData.keys()) {
+                data[key] = formData.get(key);
+            }
+            console.log(data);
+            await fetch("http://localhost:3000/api/need", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            });
+            window.location.href = 'map.html';
+            needform.reset();
+        });
+
+        function toggleInput(show, hide) {
+            var showInput = document.getElementById(show);
+            var hideInput = document.getElementById(hide);
+            var showLabel = document.getElementById(show + 'Label');
+            var hideLabel = document.getElementById(hide + 'Label');
+            var showCheckbox = document.getElementById(show + 'Checkbox');
+            var hideCheckbox = document.getElementById(hide + 'Checkbox');
+
+            if (showCheckbox.checked) {
+                showInput.style.display = 'block';
+                showLabel.style.display = 'block';
+            } else {
+                showInput.style.display = 'none';
+                showLabel.style.display = 'none';
+            }
+
+            if (hideCheckbox.checked) {
+                hideInput.style.display = 'none';
+                hideLabel.style.display = 'none';
+                hideCheckbox.checked = false;
+            }
+        }
+    </script>
+</body>
+</html>

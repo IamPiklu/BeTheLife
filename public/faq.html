@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 350px;
+            background-color: #00a2e8;
+            color: white;
+            /* padding: 20px; */
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex-grow: 1;
+            background-color: #f0f0f0;
+            background-image: url('./bg.jpg');
+            background-size: cover;
+           
+        }
+        
+        
+        .nav-item {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+        .nav-item svg {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+        }
+        .nav-item a {
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 7px;
+            padding-left: 10px;
+        }
+        
+        .top-nav {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+            background-color: #B4B4B8;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .top-nav a {
+            margin-left: 20px;
+            color: #333;
+            text-decoration: none;
+            font-size: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;   
+        }
+        
+        .det1 {
+            flex-grow: 1;
+            text-align: left;
+        }
+        .det1 p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .ele:hover{
+            opacity: 0.5;
+            color: blue;
+        }
+        .logo{
+            position:relative;
+            left: -120px;
+            top:-30px;
+
+        }
+        .faq-container {
+            position: relative;
+       top: -800px;
+       left:0px;
+        max-width: 500px;
+        margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.question {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.answer {
+  display: none;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Show answer when question is clicked */
+.question.active {
+  background-color: #e0e0e0;
+}
+
+.question.active + .answer {
+  display: block;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img class="logo" src="./logo2-removebg-preview.png" alt="Logo" height="135">
+            <div class="nav-item">
+                <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                <a class="ele" href="index.html">HOME</a>
+            </div>
+            <div class="nav-item">
+                <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                <a class="ele" href="profile.html">PROFILE</a>
+            </div>
+            <div class="nav-item">
+                <svg viewBox="0 0 24 24"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                <a class="ele" href="status.html">STATUS</a>
+            </div>
+            <div class="nav-item">
+                <svg viewBox="0 0 24 24"><path d="M11 7L9.6 8.4l2.6 2.6H2v2h10.2l-2.6 2.6L11 17l5-5-5-5zm9 12h-8v2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8v2h8v14z"/></svg>
+                <a class="ele" href="report.html">REPORT</a>
+            </div>
+            <div class="nav-item">
+                <svg viewBox="0 0 24 24"><path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                <a class="ele" href="login.html">LOGIN</a>
+            </div>
+            <div class="nav-item">
+                <svg viewBox="0 0 24 24"><path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"/></svg>
+                <a class="ele" href="faq.html">FAQ</a>
+            </div>
+            <div class="nav-item">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg>
+                <a class="ele" href="support.html">SUPPORT</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="top-nav">
+                <<a href="medicine.html">MEDICINE SUGGESTER</a>
+                <a href="maps/bloodbank.html">BLOOD BANKS</a>
+                <a href="maps/hospital.html">HOSPITALS/NURSING HOME</a>
+                <a href="maps/ngo.html">NGO LISTING</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-container">
+        <div class="faq-item">
+          <div class="question">1. What is BeTL?</div>
+          <div class="answer">BeTL is an online platform dedicated to facilitating faster connections between blood and organ donors and recipients. Additionally, it provides information on low-cost medicines and assists in resolving hospital-related issues.
+        </div>
+        </div>
+      
+        <div class="faq-item">
+          <div class="question">2. How does BeTL help in finding blood donors?</div>
+          <div class="answer">Our platform maintains a database of registered blood donors. Users can search for donors based on blood type, location, and urgency of need. This helps streamline the process of finding compatible donors quickly during emergencies.</div>
+        </div>
+      
+        <div class="faq-item">
+            <div class="question">3. Can I register as a blood donor on BeTL?</div>
+            <div class="answer">Yes, individuals interested in donating blood can easily register on our platform. Simply create an account, provide necessary details such as blood type and contact information, and you will be added to our database of potential donors.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="question">How does [Medical Website Name] help in finding blood donors?</div>
+            <div class="answer">Our platform maintains a database of registered blood donors...</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="question">4. How does BeTL facilitate organ donation?
+            </div>
+            <div class="answer">For organ donation, our platform connects potential donors with those in need through a secure and confidential matching system. Users can register their willingness to donate organs and specify preferences, which helps in expediting the transplant process.
+
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="question">5. What information does BeTL provide about low-value medicines?
+            </div>
+            <div class="answer">We offer comprehensive information about cost-effective medicines, including generic alternatives and discounts available at pharmacies. Users can search for specific medications and compare prices to make informed decisions about their healthcare expenses.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="question">6. How can BeTL assist with hospital-related problems?</div>
+            <div class="answer">Our platform provides a dedicated section where users can report issues encountered at hospitals, such as service quality concerns or administrative issues. We facilitate communication between patients and healthcare providers to ensure timely resolution of problems.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="question">7. Is BeTL accessible for healthcare providers?
+            </div>
+            <div class="answer">Yes, healthcare professionals can also benefit from our platform by accessing donor databases, information on cost-effective medications, and resources to address hospital-related challenges. Registration and access are designed to support healthcare teams in delivering efficient and patient-centered care.
+            </div>
+          </div>
+
+          
+       
+      
+      </div>
+      
+      <script>document.addEventListener('DOMContentLoaded', function() {
+        const questions = document.querySelectorAll('.question');
+      
+        questions.forEach(question => {
+          question.addEventListener('click', function() {
+            // Toggle active class to change background color
+            question.classList.toggle('active');
+      
+            // Toggle answer visibility
+            const answer = question.nextElementSibling;
+            if (question.classList.contains('active')) {
+              answer.style.display = 'block';
+            } else {
+              answer.style.display = 'none';
+            }
+          });
+        });
+      });</script>
+</body>
+</html>

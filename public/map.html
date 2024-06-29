@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizations in Bengal</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .tab {
+            border-bottom: 4px solid blue; /* Default bottom border for all tabs */
+        }
+
+        .tab.active {
+            border-bottom: none;
+            background-color: #4A5568;
+            /* Remove bottom border for the active tab */
+            border-left: 4px solid blue;
+            border-right: 4px solid blue;
+            border-top: 4px solid blue;
+            border-radius: 10px 10px 0 0;
+            
+        }
+    </style>
+</head>
+
+<body class="bg-gray-800 text-white">
+    <div class="flex h-screen">
+        <div class="w-2/5 bg-gray-900 p-4 overflow-y-scroll">
+            <div class="tabs flex mb-4">
+                <button class="tab w-1/4 p-2 text-center bg-gray-800 hover:bg-gray-700" data-target="bloodbanks">Blood
+                    Banks</button>
+                <button class="tab w-1/4 p-2 text-center bg-gray-800 hover:bg-gray-700" data-target="ngos">NGOs</button>
+                <button class="tab w-1/4 p-2 text-center bg-gray-800 hover:bg-gray-700"
+                    data-target="hospitals">Hospitals</button>
+                <button class="tab w-1/4 p-2 text-center bg-gray-800 hover:bg-gray-700"
+                    data-target="donars">Donors</button>
+            </div>
+            <div id="bloodbanks" class="tab-content active">
+                <!-- <h2 class="text-xl font-bold mb-4">Blood Banks</h2> -->
+                <ul id="bloodbank-list"></ul>
+            </div>
+            <div id="ngos" class="tab-content">
+                <!-- <h2 class="text-xl font-bold mb-4">NGOs</h2> -->
+                <ul id="ngo-list"></ul>
+            </div>
+            <div id="hospitals" class="tab-content">
+                <!-- <h2 class="text-xl font-bold mb-4">Hospitals</h2> -->
+                <ul id="hospital-list"></ul>
+            </div>
+            <div id="donars" class="tab-content ">
+                <!-- <h2 class="text-xl font-bold mb-4">Donars</h2> -->
+                <ul id="donar-list"></ul>
+            </div>
+            <a href="medicine.html" class="block mt-4 text-blue-400 hover:text-blue-300">Go to Prediction Page</a>
+        </div>
+        <div class="w-3/4" id="map"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="map.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabs = document.querySelectorAll('.tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+    
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Remove active class from all tabs and tab contents
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(tc => tc.classList.remove('active'));
+    
+                    // Add active class to clicked tab and corresponding tab content
+                    tab.classList.add('active');
+                    const target = document.getElementById(tab.getAttribute('data-target'));
+                    target.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,14 +1,39 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const fs = require('fs');
 const path = require('path');
+const cors = require('cors');
 const app = express();
 
 const mongoURI = 'mongodb://127.0.0.1:27017/bengal';
 
-mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(mongoURI)
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.error('Error connecting to MongoDB:', err));
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(cors());
+
+// Need Schema
+const needSchema = new mongoose.Schema({
+    name: String,
+    contact: String,
+    address: String,
+    bloodGroup: String,
+    organ: String
+}, { collection: 'need' });
+const Need = mongoose.model('Need', needSchema);
+
+// Receiver Schema
+const receiverSchema = new mongoose.Schema({
+    name: String,
+    email: String,
+    phone: String,
+    password: String,
+    bloodGroup: String,
+    documents: String
+}, { collection: 'receivers' });
+const Receiver = mongoose.model('Receiver', receiverSchema);
 
 // Bloodbank Schema
 const bloodbankSchema = new mongoose.Schema({
@@ -23,7 +48,7 @@ const bloodbankSchema = new mongoose.Schema({
 }, { collection: 'bloodbank' });
 const Bloodbank = mongoose.model('Bloodbank', bloodbankSchema);
 
-// Donars Schema
+// Donors Schema
 const donarsSchema = new mongoose.Schema({
     'unique-id': Number,
     name: String,
@@ -64,6 +89,72 @@ const Hospital = mongoose.model('Hospital', hospitalSchema);
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 
+// API endpoint to handle need form submission
+app.post('/api/need', async (req, res) => {
+    try {
+        const { name, contact, address, bloodGroup, organ } = req.body;
+        const newNeed = new Need({ name, contact, address, bloodGroup, organ });
+        const data = await newNeed.save();
+        res.status(201).json({ message: 'Request submitted successfully' });
+    } catch (error) {
+        console.error('Error submitting request:', error);
+        res.status(500).json({ error: error.message });
+    }
+});
+
+// API endpoint to fetch need data
+app.get('/api/needs', async (req, res) => {
+    try {
+        const needs = await Need.find({});
+        // console.log(needs);
+        res.json(needs);
+    } catch (err) {
+        console.error('Error fetching needs:', err);
+        res.status(500).json({ error: err.message });
+    }
+});
+
+
+// API endpoint to handle signups
+app.post('/api/signup', async (req, res) => {
+    try {
+        const { name, email, phone, password, bloodGroup } = req.body;
+        const newReceiver = new Receiver({
+            name,
+            email,
+            phone,
+            password, // Store the plain password (Not secure, should be hashed in production)
+            bloodGroup,
+            documents: req.file ? req.file.filename : null
+        });
+        await newReceiver.save();
+        res.status(201).json({ message: 'Receiver registered successfully' });
+    } catch (error) {
+        console.error('Error registering receiver:', error);
+        res.status(500).json({ error: error.message });
+    }
+});
+
+// API endpoint to handle login
+app.post('/api/login', async (req, res) => {
+    try {
+        const { username } = req.body;
+        console.log('Login attempt:', { username });
+
+        const receiver = await Receiver.findOne({ email: username });
+        if (!receiver) {
+            console.log('User not found');
+            return res.status(401).json({ success: false, message: 'User not found' });
+        }
+
+        console.log('Login successful');
+        res.status(200).json({ success: true, message: 'Login successful' });
+    } catch (error) {
+        console.error('Error logging in:', error);
+        res.status(500).json({ error: error.message });
+    }
+});
+
 // Serve the main page
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
@@ -84,6 +175,10 @@ app.get('/hospital', (req, res) => {
 // Serve the medicine finder page
 app.get('/medicine', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'medicine.html'));
+});
+
+app.get('/map', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'map.html'));
 });
 
 // API endpoint to fetch hospital data
@@ -119,7 +214,7 @@ app.get('/api/ngos', async (req, res) => {
     }
 });
 
-// API endpoint to fetch donar data
+// API endpoint to fetch donor data
 app.get('/api/donars', async (req, res) => {
     try {
         const donars = await Donars.find({});
@@ -130,9 +225,11 @@ app.get('/api/donars', async (req, res) => {
     }
 });
 
+
 // Load the medicine JSON data
 let medicines = {};
 
+const fs = require('fs');
 fs.readFile(path.join(__dirname, 'data', 'medicine.json'), 'utf8', (err, data) => {
     if (err) {
         console.error('Error reading medicine.json:', err);
@@ -160,6 +257,16 @@ app.get('/api/medicines', (req, res) => {
         res.json(medicines[altMedicine]);
     } else {
         res.status(404).json({ error: 'No alternative found' });
+    }
+});
+
+app.get('/api/receivers', async (req, res) => {
+    try {
+        const receivers = await Receiver.find({});
+        res.json(receivers);
+    } catch (err) {
+        console.error('Error fetching receivers:', err);
+        res.status(500).json({ error: err.message });
     }
 });
 

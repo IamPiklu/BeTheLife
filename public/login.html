@@ -13,12 +13,43 @@
             <input type="text" placeholder="Username" id="Username" class="input mb-5 w-full h-9 p-2 rounded-lg border-2 border-blue-200 text-lg outline-none">
             <input type="password" placeholder="Password" id="Password" class="input mb-5 w-full h-9 p-2 rounded-lg border-2 border-blue-200 text-lg outline-none">
             <center>
-                <p class="msg mb-5">Haven't any account? <a href="../SignUp/SignUp.html" class="text-blue-500">Sign Up</a></p>
+                <p class="msg mb-5">Haven't any account? <a href="signup.html" class="text-blue-500">Sign Up</a></p>
             </center>
             <center>
-                <button class="submit font-bold text-lg border-2 border-blue-200 rounded-lg px-5 py-2 bg-blue-400 text-white hover:bg-blue-700 cursor-pointer">Submit</button>
+                <button class="submit font-bold text-lg border-2 border-blue-200 rounded-lg px-5 py-2 bg-blue-400 text-white hover:bg-blue-700 cursor-pointer" onclick="login()">Submit</button>
             </center>
+            <p id="message" class="mt-5 text-center"></p>
         </div>
     </div>
+
+    <script>
+        async function login() {
+            const username = document.getElementById('Username').value;
+            const password = document.getElementById('Password').value;
+
+            const response = await fetch('/api/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ username, password })
+            });
+
+            const result = await response.json();
+            const messageElement = document.getElementById('message');
+
+            if (response.ok) {
+                messageElement.textContent = 'Login successful!';
+                messageElement.classList.add('text-green-500');
+                messageElement.classList.remove('text-red-500');
+                // Redirect to the index page
+                window.location.href = '/';
+            } else {
+                messageElement.textContent = result.message;
+                messageElement.classList.add('text-red-500');
+                messageElement.classList.remove('text-green-500');
+            }
+        }
+    </script>
 </body>
 </html>
